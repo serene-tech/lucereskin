@@ -16,7 +16,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'et_pb_post' ); ?>>
 					<div class="entry-content">
-					<?php
+					<?php echo "Repo is hosted at Guthub and deploy has been done by DeployHQ";
 						the_content();
 					?>
 					</div> <!-- .entry-content -->
@@ -129,7 +129,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					<?php
 						do_action( 'et_before_content' );
 
-						the_content();
+						//the_content();
 
 						wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'Divi' ), 'after' => '</div>' ) );
 					?>
